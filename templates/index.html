@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lending Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 36px;
+            flex: 1;
+            align-items: center;
+        }
+        
+        .logo {
+            padding: 20 50px;
+            width: 180px;
+            height: 100px;
+            margin-right: -800px;
+            margin-bottom: -70px;
+            margin-top:-90px;
+        }
+        
+    
+        .headline {
+            background-color: #f2f2f2;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .headline h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .headline p {
+            margin-bottom: 20px;
+        }
+        
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+        
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-image {
+            width: 200px;
+            height: 200px;
+            max-width: 200px;
+            max-height: 200px;
+            margin-bottom: 50px; /* Jarak antara gambar sidebar */
+        }
+        
+        .additional-image {
+            width: 200px;
+            height: 200px;
+            max-width: 200px;
+            max-height: 200px;
+            margin-bottom: 50px; /* Jarak antara gambar sidebar */
+        }
+        .additional-image2 {
+            width: 200px;
+            height: 200px;
+            max-width: 200px;
+            max-height: 200px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1>Welcome to MBCAcademy</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#product">Product</a></li>
+        </ul>
+    </nav>
+
+    <div class="headline">
+        <h2>Expand Your Knowledge and Master New Skills with our Online Learning Courses</h2>
+        <p>"Unleash your potential with our diverse online learning courses. Expand your knowledge, sharpen your skills, and embrace a transformative learning journey at your own pace, anytime, anywhere.</p>
+    </div>
+    
+    
+    <div class="container">
+        <div class="sidebar">
+            <img src="{{ url_for('static', filename='sidebar.png') }}" alt="Sidebar Image 1" class="sidebar-image">
+            <img src="{{ url_for('static', filename='sidebar2.png') }}" alt="Sidebar Image 2" class="sidebar-image">
+            <img src="{{ url_for('static', filename='sidebar3.png') }}" alt="Sidebar Image 2" class="sidebar-image">
+        </div>
+        
+        <div class="content">
+            <section id="home">
+                <h2>Home</h2>
+                <p>"Welcome to our innovative online learning platform, where knowledge meets convenience. Discover a vast array of expert-led courses designed to ignite your curiosity, expand your skills, and empower your personal and professional growth. With our user-friendly interface and flexible learning options, you have the freedom to embark on a transformative educational journey tailored to your schedule and preferences. Whether you're a lifelong learner or a career-driven individual, our website is your gateway to unlocking unlimited learning potential. Step into a world of boundless knowledge and embark on an enriching learning adventure with us today".</p>
+            </section>
+            
+            <section id="service">
+                <h2>Service</h2>
+                <p>
+                    "Our website offers a comprehensive range of services to enhance your online learning experience. With expertly designed courses, you'll gain access to high-quality educational content that is both engaging and interactive. Our platform provides a user-friendly interface, making it easy to navigate and discover courses that align with your interests and goals. Additionally, we offer flexible learning options, allowing you to study at your own pace and convenience. With personalized progress tracking and assessments, you can monitor your development and measure your success. Join our community of passionate learners and embark on a rewarding educational journey today."</p>
+            </section>
+            
+            <section id="product">
+                <h2>Product</h2>
+                <p>Unlock a world of possibilities with our comprehensive online learning courses covering Cybersecurity, GIS, Game Tech, and Big Data. Dive into the realm of Cybersecurity and learn to defend against digital threats, explore the power of GIS technology to analyze spatial data and make informed decisions, immerse yourself in the world of Game Tech and master the art of game development, or harness the potential of Big Data for meaningful insights and informed decision-making. Our expertly crafted courses provide practical knowledge, hands-on experience, and industry insights to equip you with the skills needed to excel in these dynamic fields. Join us now and embark on a transformative learning journey that will empower you to thrive in the digital age."</p>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; Powered by Bayuish. All rights reserved.
+    </footer>
+</body>
+</html>
